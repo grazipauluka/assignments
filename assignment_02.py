@@ -13,9 +13,9 @@ def tip_calculator():
     tip_percentage_input = input("Enter tip percentage ")
     guest = int(guest_input)
     bill = int(bill_input)
-    bill_without_tip = bill/guest
     tip_percentage = int(tip_percentage_input)/100
-    total_tip_for_guest = int((bill/guest) * tip_percentage)
+    bill_without_tip = bill/guest
+    total_tip_for_guest = bill/guest * tip_percentage
     total_bill_plus_tip = bill_without_tip + total_tip_for_guest
     print(f' Each guest needs to pay: {bill_without_tip} euros and the amount of tip for each guest is: {total_tip_for_guest} euros, so {total_bill_plus_tip} euros')
 
